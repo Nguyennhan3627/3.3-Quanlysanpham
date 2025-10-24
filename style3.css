@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 20px;
+    color: #333;
+}
+
+#app {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    color: #2bac5e;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+}
+
+#product-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#product-name, #edit-product-name {
+    flex-grow: 1; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#add-btn {
+    background-color: #197a19;
+    color: white;
+}
+#add-btn:hover {
+    background-color: #4cae4c;
+}
+
+
+#product-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+#product-table th, #product-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#product-table th {
+    background-color: #f2f2f2;
+    color: #333;
+    text-align: center;
+}
+
+
+#product-table tbody td:first-child { 
+    text-align: center;
+    width: 5%; 
+}
+#product-table tbody td:nth-child(3),
+#product-table tbody td:nth-child(4) {
+    width: 20%;
+    text-align: center;
+}
+
+#product-table tr:nth-child(even) {background-color: #D9E1F2;}
+#product-table tr:nth-child(odd) {background-color: #FFFFFF;}
+
+#product-list button:nth-of-type(1) {
+    background-color: #1e58c4;
+    color: white;
+}
+#product-list button:nth-of-type(1):hover {
+    background-color: #0b388a;
+}
+
+#edit-form {
+    padding: 15px;
+    border: 1px solid #30659e;
+    border-radius: 4px;
+    background-color: #e6f7ff;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#edit-form button[type="submit"] {
+    background-color: #1d9e55;
+    color: white;
+}
+
+#edit-form button[type="submit"]:hover {
+    background-color: #0c6e37;
+}
+
+#cancel-edit-btn {
+    background-color: #6c757d;
+    color: white;
+}
+#cancel-edit-btn:hover {
+    background-color: #5a6268;
+}
+
+#message {
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+p:has(#product-count) {
+    text-align: right;
+    font-weight: bold;
+    color: #298d3a;
+}
